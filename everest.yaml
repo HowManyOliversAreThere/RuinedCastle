@@ -1,5 +1,5 @@
 - Name: Ruined Castle
-  Version: 0.1.1
+  Version: 0.1.2
   DLL: RuinedCastle.dll
   Dependencies:
     - Name: EverestCore
