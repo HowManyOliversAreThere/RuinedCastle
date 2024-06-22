@@ -1,0 +1,3 @@
+RuinedCastle_RuinedCastle= Ruined Castle
+RuinedCastle_RuinedCastle_RuinedCastle= It All Falls Away
+poem_RuinedCastle_RuinedCastle_RuinedCastle_A= Escape
