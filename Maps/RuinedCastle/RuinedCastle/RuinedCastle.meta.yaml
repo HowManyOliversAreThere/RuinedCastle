@@ -1,0 +1,8 @@
+CompleteScreen:
+    Title:
+        ASide: "AREACOMPLETE_NORMAL" # A-side complete ("Chapter Complete")
+    Atlas: "Endscreens/Bowman/RuinedCastle"
+    Layers:
+      - Type: "ui"
+      - Type: "layer"
+        Images: [ "00" ]
