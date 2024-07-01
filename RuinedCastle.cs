@@ -1,6 +1,5 @@
 ﻿using Celeste;
 using Celeste.Mod;
-using Microsoft.Xna.Framework;
 
 public class RuinedCastle : EverestModule
 {
@@ -13,27 +12,18 @@ public class RuinedCastle : EverestModule
 
     public override void Load()
     {
-        Console.WriteLine("RuinedCastle loaded");
-        On.Celeste.Level.Begin += OnBeginLevel;
-        On.Celeste.Level.Reload += OnReloadLevel;
+        On.Celeste.Level.LoadLevel += OnLoadLevel;
     }
 
     public override void Unload()
     {
-        On.Celeste.Level.Begin -= OnBeginLevel;
-        On.Celeste.Level.Reload -= OnReloadLevel;
+        On.Celeste.Level.LoadLevel -= OnLoadLevel;
     }
 
-    private void OnBeginLevel(On.Celeste.Level.orig_Begin orig, Level self)
+    private void OnLoadLevel(On.Celeste.Level.orig_LoadLevel orig, Level self, Player.IntroTypes playerIntro, bool isFromLoader)
     {
+        orig(self, playerIntro, isFromLoader);
         LevelGen(self);
-        orig(self);
-    }
-
-    private void OnReloadLevel(On.Celeste.Level.orig_Reload orig, Level self)
-    {
-        LevelGen(self);
-        orig(self);
     }
 
     private void LevelGen(Level level)
