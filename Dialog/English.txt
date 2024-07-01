@@ -1,3 +1,40 @@
 RuinedCastle_RuinedCastle= Ruined Castle
 RuinedCastle_RuinedCastle_RuinedCastle= Collapse
-poem_RuinedCastle_RuinedCastle_RuinedCastle_A= Let the weakness fall away
+poem_RuinedCastle_RuinedCastle_RuinedCastle_A= Let it all fall away
+
+RuinedCastle_RuinedCastle_Intro=
+[BADELINE right worriedAlt]
+Madeline, this really isn't good
+[MADELINE left upset]
+Oh, a dilapidated castle collapsing around us isn't a good thing?
+Please, tell me more.
+[BADELINE right upset]
+Look, I told you this was a bad idea, and you did it anyway
+[MADELINE left normal]
+Are you going to help me figure out a way out or are you just going to keep sulking?
+[BADELINE right angry]
+...
+[MADELINE left peaceful]
+ 
+
+RuinedCastle_RuinedCastle_Help=
+[MADELINE left surprised]
+It's all gone
+[BADELINE right scoff]
+You mean the castle didn't collapse into a perfect staircase for you?
+[MADELINE left normal]
+Are you ready to help yet?
+[BADELINE right serious]
+Are you ready to apologise yet?
+[MADELINE left normal]
+If I apologise will you help?
+[BADELINE right serious]
+Yes
+[MADELINE left normal]
+Sorry
+[BADELINE right serious_alt]
+You don't even slightly mean that do you
+[MADELINE left normal]
+No
+[BADELINE right sigh]
+...fine

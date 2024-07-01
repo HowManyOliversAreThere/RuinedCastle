@@ -1,6 +1,9 @@
-- Name: Ruined Castle
-  Version: 0.2.0
-  DLL: RuinedCastle.dll
+- DLL: RuinedCastle.dll
+  Name: Ruined Castle
+  Version: 0.3.0
   Dependencies:
+    - Name: DJMapHelper
+      Version: 1.13.4
+    - Name: Everest
     - Name: EverestCore
       Version: 1.4465.0
