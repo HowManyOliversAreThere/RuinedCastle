@@ -37,10 +37,10 @@ public class ProceduralLevelGenerator
             float progress = (float)(x - startX) / (endX - startX);
             for (int y = 4; y < levelheight; y++)
             {
-                // Make platform always exist at start and taper off towards the end
+                // Make platform practically always exist at start and taper off towards the end
                 if (_random.NextDouble() < 0.05 + (1 - progress) * 0.5)
                 {
-                    level.Add(new CrumblePlatform(new Vector2(x * 8, y * 8), 8));
+                    level.Add(new ImpermanentCrumblePlatform(new Vector2(x * 8, y * 8), 8));
                 }
             }
         }
@@ -62,7 +62,7 @@ public class ProceduralLevelGenerator
                 // Make platform always exist at start and taper off towards the end
                 if (_random.NextDouble() < 0.05 * (1 - progress))
                 {
-                    level.Add(new CrumblePlatform(new Vector2(x * 8, y * 8), 8));
+                    level.Add(new ImpermanentCrumblePlatform(new Vector2(x * 8, y * 8), 8));
                 }
 
                 // Make dash crystal appear more frequently with progress
